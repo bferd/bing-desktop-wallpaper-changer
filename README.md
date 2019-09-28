@@ -1,4 +1,6 @@
-# Bing Desktop Wallpaper and Login Screen Changer for Peppermint OS 
+## Bing Desktop Wallpaper and Login Screen Changer for Peppermint OS
+bing-desktop-wallpaper-changer (by UtkardhGpta) Fork with login screen changer too
+
 Automatically downloads and changes desktop wallpaper and login screen to Bing Photo of the Day.
 
 ## Synopsis
@@ -113,17 +115,5 @@ P.S. The Installer has a easter egg! (Any new easter egg ideas is welcome) Try:
 ./installer.sh --enable-devmode --run-installer-command=easter_egg
 ```
 
-## To do
-- [ ] When installing, Ask user about : Schedule with crontab, Limit the size of all downloaded wallpapers, Start with timer
-- [ ] Installer support for *rpm*-using distros (50% done - added support, but it will probably not work. needs feedback)
-
-*Any other suggestions welcome!*
-
-## Author
-Utkarsh Gupta and [Contributors](https://github.com/UtkarshGpta/bing-desktop-wallpaper-changer/network/members)
-
 ## License
 [MIT license](http://opensource.org/licenses/mit-license.php).
-
-## Note
-If you're on GNOME, you can use this [extension](https://extensions.gnome.org/extension/1262/bing-wallpaper-changer/) by [neffo](https://github.com/neffo) which makes use of this script. I am using it myself. Peace :D
