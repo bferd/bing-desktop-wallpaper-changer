@@ -1,8 +1,8 @@
-# Bing Desktop Wallpaper Changer
-Automatically downloads and changes desktop wallpaper to Bing Photo of the Day.
+# Bing Desktop Wallpaper and Login Screen Changer for Peppermint OS 
+Automatically downloads and changes desktop wallpaper and login screen to Bing Photo of the Day.
 
 ## Synopsis
-Python Script for automatically downloading and changing the desktop wallpaper to Bing Photo of the day. The script runs automatically at the startup and works on GNU/Linux with Gnome or Cinnamon. Works perfectly on Ubuntu and Linux Mint.
+Python Script for automatically downloading and changing the desktop wallpaper to Bing Photo of the day. The script runs automatically at the startup and works on Peppermint OS.
 
 ## What does it do?
 It grabs images exactly the same way *Microsoft* uses to put it up on its page - using **XML/RSS/JSON**. You can't scrape the website directly. After searching on the internet for long I found out the link - *http://www.bing.com/HPImageArchive.aspx?format=xml&idx=0&n=1&mkt=en-US*
@@ -41,6 +41,12 @@ Starting with Installer version 2.0+, the Installer works like a normal GNU/Linu
 Note that the Installer can request root permissions(sudo) for doing some tasks!
 
 ### Prepare
+
+First install pip
+```
+sudo apt-get update
+sudo apt-get install python-pip && pip install Pillow
+```
 
 When you first run the Installer, you need to:
 
