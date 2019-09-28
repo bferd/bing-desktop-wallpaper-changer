@@ -1,4 +1,4 @@
-## Bing Desktop Wallpaper and Login Screen Changer for Peppermint OS
+### Bing Desktop Wallpaper and Login Screen Changer for Peppermint OS
 bing-desktop-wallpaper-changer (by UtkardhGpta) Fork with login screen changer too
 
 Automatically downloads and changes desktop wallpaper and login screen to Bing Photo of the Day.
