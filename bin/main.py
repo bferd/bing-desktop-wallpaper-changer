@@ -5,9 +5,11 @@ import locale
 import os
 import re
 import sys
+import shutil
+from PIL import Image
 
-# replace with the actual path to the bing-desktop-wallpaper-changer folder
-path_to_Bing_Wallpapers="/path/to/bing-desktop-wallpaper-changer"
+# setup done to /opt/bing-desktop-wallpaper-changer by BDWC Installer v3.3.1-release
+path_to_Bing_Wallpapers="/opt/bing-desktop-wallpaper-changer"
 
 # wait computer internet connection
 os.system("sleep 10")
@@ -384,6 +386,7 @@ def main():
         
         if not os.path.isfile(image_path):
             urlretrieve(image_url, image_path)
+
             try:
                 change_background_gnome(image_path)
             except:
@@ -417,7 +420,17 @@ def main():
         body = err
         print(body)
         exit_status = 1
-    
+
+#copy bing photo to login
+    shutil.copyfile(image_path, '/usr/share/peppermint/images/Peppermint-login.jpg')
+
+#save as png
+    im = Image.open('/usr/share/peppermint/images/Peppermint-login.jpg')
+    im.save('/usr/share/peppermint/images/Peppermint-login.png')
+
+#change permissions
+    os.chmod('/usr/share/peppermint/images/Peppermint-login.png', 0o644)
+
     os.chdir(path_to_Bing_Wallpapers)
     icon = os.path.abspath("icon.svg") 
     app_notification = Notify.Notification.new(summary, str(body), icon)
