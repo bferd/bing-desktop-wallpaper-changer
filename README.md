@@ -44,10 +44,6 @@ Note that the Installer can request root permissions(sudo) for doing some tasks!
 
 ### Prepare
 
-First install pip
-```
-sudo apt-get update
-sudo apt-get install python-pip && pip install Pillow
 ```
 
 When you first run the Installer, you need to:
