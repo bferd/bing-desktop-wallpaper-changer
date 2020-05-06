@@ -421,15 +421,8 @@ def main():
         print(body)
         exit_status = 1
 
-#copy bing photo to login
-    shutil.copyfile(image_path, '/usr/share/peppermint/images/Peppermint-login.jpg')
-
-#save as png
-    im = Image.open('/usr/share/peppermint/images/Peppermint-login.jpg')
-    im.save('/usr/share/peppermint/images/Peppermint-login.png')
-
-#change permissions
-    os.chmod('/usr/share/peppermint/images/Peppermint-login.png', 0o644)
+#copy bing photo to backdrop folder
+    shutil.copyfile(image_path, '/usr/share/xfce4/backdrops/BingpicOtheday.jpg')
 
     os.chdir(path_to_Bing_Wallpapers)
     icon = os.path.abspath("icon.svg") 
